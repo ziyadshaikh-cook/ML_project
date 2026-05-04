@@ -8,5 +8,6 @@ seaborn
 catboost
 xgboost
 dill
-mlflow
+mlflow==2.13.0
+flask
 -e .

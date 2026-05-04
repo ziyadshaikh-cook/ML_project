@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/samir/NOOR/ALL_PROJECTS/ETE_Student_performance_indicator/mlruns/0/600fe8fbe74f4d90aec7b47bf84a12ba/artifacts
+end_time: 1777886377740
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 600fe8fbe74f4d90aec7b47bf84a12ba
+run_name: youthful-cat-275
+run_uuid: 600fe8fbe74f4d90aec7b47bf84a12ba
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777886370831
+status: 3
+tags: []
+user_id: root
