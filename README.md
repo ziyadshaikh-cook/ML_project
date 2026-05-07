@@ -35,30 +35,26 @@ It was built end-to-end: from raw data all the way to a working web app where an
 ## Project Structure
 ├── src/ML_project/
 │ ├── components/
-│ │ ├── data_ingestion.py # Reads and splits the raw data
-│ │ ├── data_transformation.py # Cleans and encodes the data
-│ │ ├── model_trainer.py # Trains and picks the best model
-│ │ └── model_monitoring.py # Detects if new data has drifted
+│ │ ├── data_ingestion.py
+│ │ ├── data_transformation.py
+│ │ ├── model_trainer.py
+│ │ └── model_monitoring.py
 │ ├── pipelines/
-│ │ ├── training_pipelines.py # Runs the full training flow
-│ │ └── prediction_pipelines.py # Loads model and predicts on new input
-│ ├── exception.py # Custom error handling
-│ ├── logger.py # Logging setup
-│ └── utils.py # Shared helper functions
+│ │ ├── training_pipelines.py
+│ │ └── prediction_pipelines.py
+│ ├── exception.py
+│ ├── logger.py
+│ └── utils.py
 ├── templates/
-│ ├── index.html # Home page
-│ └── home.html # Prediction form
+│ ├── index.html
+│ └── home.html
 ├── notebook/
-│ ├── 1. EDA STUDENT PERFORMANCE.ipynb # Exploratory data analysis
-│ └── 2. MODEL TRAINING.ipynb # Model experiments
-├── app.py # Flask web app
-├── main.py # Run training pipeline
-├── Dockerfile # Container setup
-└── requirements.txt # Python dependencies
-
-text
-
----
+│ ├── 1. EDA STUDENT PERFORMANCE.ipynb
+│ └── 2. MODEL TRAINING.ipynb
+├── app.py
+├── main.py
+├── Dockerfile
+└── requirements.txt
 
 ## How to Run Locally
 
