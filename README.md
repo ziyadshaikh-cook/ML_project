@@ -2,6 +2,8 @@
 
 A machine learning project that predicts a student's math score based on their personal background and other exam scores.
 
+**Live Demo**: [https://student-performance-prediction-026p.onrender.com](https://student-performance-prediction-026p.onrender.com)
+
 ---
 
 ## What Does This Project Do?
@@ -28,7 +30,8 @@ It was built end-to-end: from raw data all the way to a working web app where an
 - **MLflow + DagsHub** — experiment tracking (logs which model performed best)
 - **Flask** — web framework for the prediction form
 - **pandas / numpy** — data handling
-- **Docker** — containerization for deployment
+- **Docker** — containerization
+- **Render** — cloud deployment (live hosting)
 
 ---
 
@@ -65,14 +68,15 @@ It was built end-to-end: from raw data all the way to a working web app where an
 
 **1. Clone the repo**
 ```bash
-git clone https://github.com/ziyadshaikh-cook/ML_project.git
-cd ML_project
+git clone https://github.com/ziyadshaikh-cook/Student-Performance-Prediction.git
+cd Student-Performance-Prediction
 ```
 
 **2. Create a virtual environment and install dependencies**
 ```bash
 python -m venv venv
-venv\Scripts\activate
+venv\Scripts\activate        # Windows
+source venv/bin/activate     # Mac/Linux
 pip install -r requirements.txt
 ```
 
@@ -87,6 +91,16 @@ This will generate `artifacts/model.pkl` and `artifacts/preprocessor.pkl`
 python app.py
 ```
 Open your browser and go to `http://127.0.0.1:5000`
+
+---
+
+## Run with Docker
+
+```bash
+docker build -t student-performance-prediction .
+docker run -p 5000:5000 student-performance-prediction
+```
+Open your browser and go to `http://localhost:5000`
 
 ---
 
@@ -106,7 +120,16 @@ Best model is selected based on R² score on the test set. Current best: **Linea
 
 ---
 
+## Deployment
+
+The app is containerized with Docker and deployed on **Render**.
+
+Every push to the `main` branch automatically triggers a redeployment.
+
+**Live URL**: [https://student-performance-prediction-026p.onrender.com](https://student-performance-prediction-026p.onrender.com)
+
+---
+
 ## Author
 
 **Ziyad Shaikh**  
-Integrated MSc in Data Science — Goa Business School, Goa University
